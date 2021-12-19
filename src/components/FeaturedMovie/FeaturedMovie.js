@@ -40,12 +40,15 @@ export default function FeaturedMovie({item}) {
                 <div className={classes.featured_horizontal}>
                     <div className={classes.featured_name}>{item.original_name}</div>
                     <div className={classes.featured_info}>
-                        <div className={classes.featured_points}> {point}% de relevância </div>
+                        <div className={classes.featured_points}> {point}% relevante </div>
                         <div className={classes.featured_year}>{date.getFullYear()}</div>
                         <div className={classes.featured_seasons}>{textSeasons}</div>
                     </div>
                     <div className={classes.featured_description}>{item.overview}</div>
-                    <div className={classes.featured_buttons}></div>
+                    <div className={classes.featured_buttons}>
+                        <a href={`/watch/${item.id}`} className={classes.featured_watchButton} >► Assistir</a>
+                        <a href={`/list/add/${item.id}`} className={classes.featured_myListButton} >+ Minha Lista</a>
+                    </div>
                     <div className={classes.featured_genres}><strong>Gêneros:</strong> {genres.join(", ")}</div>
                 </div>
             </div>
