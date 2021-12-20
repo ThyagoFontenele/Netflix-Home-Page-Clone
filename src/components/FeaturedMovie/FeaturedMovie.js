@@ -38,7 +38,7 @@ export default function FeaturedMovie({item}) {
 
             <div className={classes.featured_vertical}>
                 <div className={classes.featured_horizontal}>
-                    <div className={classes.featured_name}>{item.original_name}</div>
+                    <div className={classes.featured_name}>{item.name}</div>
                     <div className={classes.featured_info}>
                         <div className={classes.featured_points}> {point}% relevante </div>
                         <div className={classes.featured_year}>{date.getFullYear()}</div>
