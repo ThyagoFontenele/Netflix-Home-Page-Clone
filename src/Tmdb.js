@@ -7,7 +7,7 @@ const basicFetch = async (endpoint) => {
     return json;
 }
 
-export default {
+const exportedFunctions = {
     getHomeList: async () => {
         return [
             {
@@ -72,3 +72,4 @@ export default {
     }
 }
 
+export default exportedFunctions
