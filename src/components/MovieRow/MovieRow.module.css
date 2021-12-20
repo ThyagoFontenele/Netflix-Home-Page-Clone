@@ -9,9 +9,6 @@
     overflow-x: hidden;
     padding-left: 30px;
 }
-.movieRow_list{
-    width: 99999px;
-}
 .movieRow_item{
     display: inline-block;
     width: 150px;
@@ -25,4 +22,30 @@
 .movieRow_item img:hover{
     transform: scale(1);
     
+}
+
+.movieRow_left,
+.movieRow_right{
+    position: absolute;
+    width: 40px;
+    height: 225px;
+    background-color: rgba(0, 0, 0, 0.616);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+.movieRow:hover .movieRow_left,
+.movieRow:hover .movieRow_right{
+    opacity: 1;
+}
+.movieRow_left{
+    left: 0;
+}
+.movieRow_right{
+    right: 0;
 }

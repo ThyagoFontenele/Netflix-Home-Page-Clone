@@ -18,3 +18,18 @@ footer{
   color: rgb(255, 255, 255);
   font-size: 14px;
 }
+.loading{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 99;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading img{
+  width: 700px;
+}
