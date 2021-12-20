@@ -52,8 +52,8 @@ export default function App(){
 
       <section className="lists">
         {movieList.map((item, key) => (
-          <div>
-            <MovieRow key={key} title={item.title} items={item.items}/>
+          <div key={key}>
+            <MovieRow title={item.title} items={item.items}/>
           </div>
         ))}
       </section>

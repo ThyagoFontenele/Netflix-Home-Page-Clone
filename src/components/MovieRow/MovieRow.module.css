@@ -3,7 +3,7 @@
 }
 .movieRow h2{
     margin: 0px 0px 0px 30px;
-    font-size: 2rem;
+    font-size: 30px;
 }
 .movieRow_listArea{
     overflow-x: hidden;
@@ -48,4 +48,13 @@
 }
 .movieRow_right{
     right: 0;
+}
+@media (max-width: 760px){
+    .movieRow_left,
+    .movieRow_right{
+        opacity: 1;
+    }
+    .movieRow h2{
+        font-size: 24px;
+    }
 }

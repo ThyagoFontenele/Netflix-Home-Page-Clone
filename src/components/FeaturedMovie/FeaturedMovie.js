@@ -27,7 +27,6 @@ export default function FeaturedMovie({item}) {
         setPoint(relevant)
 
     }, [])
-    console.log(item)
     return(
         <section className={classes.featured} style={{
             backgroundSize: 'cover',
